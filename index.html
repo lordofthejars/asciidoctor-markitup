@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>markItUp! Universal markup editor</title>
+	<link rel="stylesheet" type="text/css" href="images/style.css">
+	<!-- markItUp! skin -->
+	<link rel="stylesheet" type="text/css" href="markitup/skins/markitup/style.css">
+	<!--  markItUp! toolbar skin -->
+	<link rel="stylesheet" type="text/css" href="markitup/sets/asciidoc/style.css">
+	<!-- jQuery -->
+	<script type="text/javascript" src="markitup/jquery-1.7.2.min.js"></script>
+	<!-- markItUp! -->
+	<script type="text/javascript" src="markitup/jquery.markitup.js"></script>
+	<!-- markItUp! toolbar settings -->
+	<script type="text/javascript" src="markitup/sets/asciidoc/opal.js"></script>
+	<script type="text/javascript" src="markitup/sets/asciidoc/set.js"></script>
+	<script type="text/javascript" src="markitup/sets/asciidoc/asciidoctor.js"></script>
+
+</head>
+<body>
+<h1><a href="http://markitup.jaysalvat.com/">markItUp!</a></h1>
+<textarea id="markItUp" cols="80" rows="20">
+</textarea>
+
+<script type="text/javascript">
+$(function() {
+	// Add markItUp! to your textarea in one line
+	// $('textarea').markItUp( { Settings }, { OptionalExtraSettings } );
+	$('#markItUp').markItUp(mySettings);
+});
+</script>
+</body>
+</html>
